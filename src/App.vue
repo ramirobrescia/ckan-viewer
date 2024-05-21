@@ -1,9 +1,11 @@
 <script setup>
-import Start from './components/Start.vue'
+//import Start from './components/Start.vue'
 </script>
 
 <template>
-  <Start />
+  <main>
+    <RouterView />
+  </main>
 </template>
 
 <style scoped>

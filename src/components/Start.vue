@@ -15,7 +15,8 @@ const ckanURL = ref('')
           <v-text-field v-model="ckanURL" label="CKAN api url" variant="solo" required></v-text-field>
         </v-col>
         <v-col cols="12">
-          <v-btn class="text-none" color="primary" size="x-large" variant="flat" block>
+          <v-btn class="text-none" color="primary" size="x-large" variant="flat" block
+            :to="`/browse?url=${ckanURL}`">
             Explore
           </v-btn>
         </v-col>
