@@ -16,7 +16,7 @@ const ckanURL = ref('')
         </v-col>
         <v-col cols="12">
           <v-btn class="text-none" color="primary" size="x-large" variant="flat" block
-            :to="`/browse?url=${ckanURL}`">
+            :to="`/browse/${ckanURL}`">
             Explore
           </v-btn>
         </v-col>
