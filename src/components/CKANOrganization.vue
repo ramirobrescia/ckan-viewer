@@ -1,3 +1,12 @@
+<script setup>
+import { ref, defineProps } from 'vue'
+defineProps(['organization'])
+
+// const organization = ref(props.organization)
+// const showMenu = true;
+
+</script>
+
 <template>
 	<v-list-item :key="organization.id">
 		<v-list-item-content>
@@ -5,7 +14,7 @@
 			<v-list-item-subtitle>{{ organization.title }}</v-list-item-subtitle>
 		</v-list-item-content>
 
-		<v-list-item-action>
+		<!-- <v-list-item-action>
 			<v-menu v-model="showMenu">
 				<v-btn icon @click.stop="showMenu = !showMenu">
 					<v-icon>mdi-more_vert</v-icon>
@@ -27,15 +36,8 @@
 					</v-list-item>
 				</v-menu-content>
 			</v-menu>
-		</v-list-item-action>
+		</v-list-item-action> -->
 	</v-list-item>
 </template>
-
-<script setup>
-import { ref } from 'vue';
-
-const organization = ref({});
-const showMenu = true;
-</script>
 
 <style scoped></style>

@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 
 const ckanURL = ref('')
+
 </script>
 
 <template>
@@ -14,7 +15,7 @@ const ckanURL = ref('')
         <v-col cols="12">
           <v-text-field v-model="ckanURL" label="CKAN api url" variant="solo" required></v-text-field>
         </v-col>
-        <v-col cols="12">
+        <v-col cols="6">
           <v-btn class="text-none" color="primary" size="x-large" variant="flat" block
             :to="`/browse/${ckanURL}`">
             Explore

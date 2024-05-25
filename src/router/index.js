@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 import Start from '../components/Start.vue'
-import CKANBrowser from '../components/CKANBrowser.vue'
+import CKANBrowser from "../components/CKANBrowser.vue";
 
 const routes = [
   { path: '/', component: Start },
